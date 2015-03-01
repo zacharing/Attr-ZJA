@@ -1,5 +1,9 @@
 package edu.saintjoe.cs.brianc.attr;
 
+/* Driver class to test Attr/ColorAttr/ScreenColor classes
+ * 	Brian Capouch 
+ * CMP112 1 March 2015
+ */
 public class TestColor {
 	  public static void main(String[] args) {
 		ColorAttr color0 = new ColorAttr("Dumb");
