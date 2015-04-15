@@ -27,8 +27,8 @@ package edu.saintjoe.cs.brianc.attr;
 			    return retval;
 			    }
 
-			  /** Set value to ScreenColor, not description */
-			  public ScreenColor setValue(ScreenColor newValue) {
+		  /** Set value to ScreenColor, not description */
+		  public ScreenColor setValue(ScreenColor newValue) {
 			    // do superclass first
 			    super.setValue(newValue.toString());
 			    ScreenColor oldValue = myColor;
@@ -36,8 +36,8 @@ package edu.saintjoe.cs.brianc.attr;
 			    return oldValue;
 			    }
 
-			  /** Return decoded ScreenColor object */
-			  public ScreenColor getValue() {
+		  /** Return decoded ScreenColor object */
+		  public ScreenColor getValue() {
 			    return myColor;
 			    }
 
