@@ -19,21 +19,26 @@ public class Attr {
 	    this.value = value;
 	    }
 
-	  public String getname() {
+	// Accessor or "getter"
+	public String getname() {
 	    return name;
 	    }
 
-	  public Object getvalue() {
+	// Accessor or "getter"
+	public Object getvalue() {
 	    return value;
 	    }
 
-	  public Object setValue(Object newValue) {
+	// Setter or mututator for data member "value"
+	public Object setValue(Object newValue) {
 	    Object oldVal = value;
 	    value = newValue;
 	    return oldVal;
 	    }
 
-	  public String toString() {
+	// ALL classes should have a "toString" method to visualize their contents
+	//   that usually means just printing their data members
+	public String toString() {
 	    return name + "='" + value + "'";
 	    }
 	}
