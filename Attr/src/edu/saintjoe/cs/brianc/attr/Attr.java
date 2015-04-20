@@ -1,5 +1,5 @@
 package edu.saintjoe.cs.brianc.attr;
-
+// These comments are added by Brian
 public class Attr {
 	  private final String name;
 	  private Object value = null;
