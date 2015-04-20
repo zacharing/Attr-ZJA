@@ -7,19 +7,27 @@ package edu.saintjoe.cs.brianc.attr;
 		// myColor is an ADDITIONAL data member of the ColorAttr class
 		private ScreenColor myColor; // The decoded color
 
+		// Constructor No 1
 		// This constructor takes a name and a value
 		public ColorAttr(String name, Object value) {
+			// super means call the parent class constructor
+			// Note that: the parent class MUST have a constructor
+			// with the indicated signature (e.g. name, value)
 		    super(name, value);
-		    System.out.println("C1");
+		    // System.out.println("C1");
 		    decodeColor();
 		    }
 
+		// constructor No 2
 		// This constructor takes a name only
 		public ColorAttr(String name) {
+			// Call the ColorAttr constructor which mathches the parameters
+			//  in the same order and type
 		    this(name, "Transparent");
 		    System.out.println("C2");
 		    }
 
+		// constructor no 3
 		// This constructor takes a name and a ScreenColor value
 		public ColorAttr(String name, ScreenColor value) {
 		    super(name, value.toString());
@@ -27,7 +35,8 @@ package edu.saintjoe.cs.brianc.attr;
 		    myColor = value;
 		    }
 
-		  public Object setValue(Object newValue)  {
+		// THIS is an example of method overriding!!!!!!!!!
+		public Object setValue(Object newValue)  {
 			    // do superclass stuff first
 			    Object retval = super.setValue(newValue);
 			    decodeColor();
