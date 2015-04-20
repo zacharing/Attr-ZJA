@@ -1,20 +1,27 @@
 package edu.saintjoe.cs.brianc.attr;
 
+	// Brian Capouch commenting a subclass of Attr, called ColorAttr
 	public class ColorAttr extends Attr {
-		  private ScreenColor myColor; // The decoded color
+		
+		
+		// myColor is an ADDITIONAL data member of the ColorAttr class
+		private ScreenColor myColor; // The decoded color
 
-		  public ColorAttr(String name, Object value) {
+		// This constructor takes a name and a value
+		public ColorAttr(String name, Object value) {
 		    super(name, value);
 		    System.out.println("C1");
 		    decodeColor();
 		    }
 
-		  public ColorAttr(String name) {
+		// This constructor takes a name only
+		public ColorAttr(String name) {
 		    this(name, "Transparent");
 		    System.out.println("C2");
 		    }
 
-		  public ColorAttr(String name, ScreenColor value) {
+		// This constructor takes a name and a ScreenColor value
+		public ColorAttr(String name, ScreenColor value) {
 		    super(name, value.toString());
 		    System.out.println("C3");
 		    myColor = value;
