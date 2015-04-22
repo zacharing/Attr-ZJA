@@ -23,7 +23,7 @@ package edu.saintjoe.cs.brianc.attr;
 		public ColorAttr(String name) {
 			// Call the ColorAttr constructor which mathches the parameters
 			//  in the same order and type
-		    this(name, "Transparent");
+		    this(name, "transparent");
 		    // System.out.println("C2");
 		    }
 
