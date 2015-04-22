@@ -6,12 +6,12 @@ public class ScreenColor {
 	private int colorValue;
 	private String description;
 
-	  public ScreenColor(String colorDescription) {
-	    description = colorDescription;
+	  public ScreenColor(Object colorDescription) {
+	    description = (String) colorDescription;
 	    colorValue = encode(colorDescription);
 	    }
 	  
-	  private int encode(String colorDescription) {
+	  private int encode(Object colorDescription) {
 		  if (colorDescription.equals("transparent"))
 				  return (colorValue = 0x0000000);
 		  else if (colorDescription.equals("red"))
