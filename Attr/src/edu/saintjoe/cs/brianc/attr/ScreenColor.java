@@ -17,6 +17,7 @@ public class ScreenColor {
 			  // This is a bogus value!!
 			  return (colorValue = 0x000000);
 		  else if (colorDescription.equals("red"))
+			  // green, yellow, blue
 			  return (colorValue = 0xff0000);
 		  
 		  // We have to return something; this isn't really the right way to do it!
