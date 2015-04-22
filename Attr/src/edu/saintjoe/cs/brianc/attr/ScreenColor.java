@@ -1,10 +1,22 @@
 package edu.saintjoe.cs.brianc.attr;
 
 public class ScreenColor {
-	  public Object value = null;
+	
+	// A ScreenColor object has to properties (data members)
+	private int colorValue;
+	private String description;
 
-	  public ScreenColor(Object newValue) {
-	    value = newValue;
+	  public ScreenColor(String colorDescription) {
+	    description = colorDescription;
+	    colorValue = encode(colorDescription);
 	    }
+	  
+	  private int encode(String colorDescription) {
+		  if (colorDescription.equals("transparent"))
+				  return (colorValue = 0x0000000);
+		  else if (colorDescription.equals("red"))
+			  return (colorValue = 0x1231232);
+		  return 0;
+	  }
 
 	}
