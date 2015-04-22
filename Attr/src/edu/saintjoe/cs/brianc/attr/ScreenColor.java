@@ -17,6 +17,8 @@ public class ScreenColor {
 				  return (colorValue = 0x000000);
 		  else if (colorDescription.equals("red"))
 			  return (colorValue = 0xff0000);
+		  
+		  // We have to return something; this isn't really the right way to do it!
 		  return 0;
 	  }
 
