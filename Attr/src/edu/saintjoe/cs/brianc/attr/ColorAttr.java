@@ -8,7 +8,7 @@ package edu.saintjoe.cs.brianc.attr;
 		private ScreenColor myColor; // The decoded color
 
 		// Constructor No 1
-		// This constructor takes a name and a value
+		// This constructor takes a name and an Object value
 		public ColorAttr(String name, Object value) {
 			// super means call the parent class constructor
 			// Note that: the parent class MUST have a constructor
@@ -24,14 +24,14 @@ package edu.saintjoe.cs.brianc.attr;
 			// Call the ColorAttr constructor which mathches the parameters
 			//  in the same order and type
 		    this(name, "Transparent");
-		    System.out.println("C2");
+		    // System.out.println("C2");
 		    }
 
 		// constructor no 3
 		// This constructor takes a name and a ScreenColor value
 		public ColorAttr(String name, ScreenColor value) {
 		    super(name, value.toString());
-		    System.out.println("C3");
+		    //System.out.println("C3");
 		    myColor = value;
 		    }
 
