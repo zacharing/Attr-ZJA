@@ -13,7 +13,7 @@ public class ScreenColor {
 	    }
 	  
 	  private int encode(Object colorDescription) {
-		  if (colorDescription.equals("transparent"))
+		  if (colorDescription.equals("rransparent"))
 				  return (colorValue = 0x000000);
 		  else if (colorDescription.equals("red"))
 			  return (colorValue = 0xff0000);
