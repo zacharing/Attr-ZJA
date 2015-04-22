@@ -13,8 +13,9 @@ public class ScreenColor {
 	    }
 	  
 	  private int encode(Object colorDescription) {
-		  if (colorDescription.equals("rransparent"))
-				  return (colorValue = 0x000000);
+		  if (colorDescription.equals("transparent"))
+			  // This is a bogus value!!
+			  return (colorValue = 0x000000);
 		  else if (colorDescription.equals("red"))
 			  return (colorValue = 0xff0000);
 		  
