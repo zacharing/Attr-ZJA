@@ -6,7 +6,7 @@ public class ColorAttrDriver {
 		
 		ColorAttr testColor;
 		
-		testColor = new ColorAttr("red");
+		testColor = new ColorAttr("Color","red");
 		System.out.println(testColor.toString());
 	
 	
