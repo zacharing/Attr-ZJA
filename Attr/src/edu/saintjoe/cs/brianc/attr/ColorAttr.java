@@ -13,6 +13,7 @@ package edu.saintjoe.cs.brianc.attr;
 			// super means call the parent class constructor
 			// Note that: the parent class MUST have a constructor
 			// with the indicated signature (e.g. name, value)
+			// Below line is the same as writing Attr(name,value)
 		    super(name, value);
 		    // System.out.println("C1");
 		    decodeColor();
