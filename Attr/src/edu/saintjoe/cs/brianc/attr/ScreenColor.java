@@ -17,17 +17,17 @@ public class ScreenColor {
 	private int encode(Object foo) {
 		  if (foo.equals("transparent"))
 			  // This is a bogus value!!
-			  return (colorValue = 0x000000);
+			  return -1;
 		  else if (foo.equals("red"))
 			  // green, yellow, blue
-			  return (colorValue = 0xff0000);
+			  return 0xff0000;
 		  else if (foo.equals("green"))
-		  		return (colorValue  = 0x00cc00);
+		  		return 0x00cc00;
 		  else if (foo.equals("yellow"))
-			  	return (colorValue = 0x999900);
+			  	return 0x999900;
 		  
 		  // We have to return something; this isn't really the right way to do it!
-		  return 0;
+		  return -1;
 	  }
 	  public String toString() {
 		  return description;
