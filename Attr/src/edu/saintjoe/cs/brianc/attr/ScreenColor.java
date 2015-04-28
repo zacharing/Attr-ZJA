@@ -8,9 +8,9 @@ public class ScreenColor {
 
 	
 	// emil exists to show how parameter names are arbitrary
-	public ScreenColor(Object emil) {
-		description = (String) emil;
-	    colorValue = encode(emil);
+	public ScreenColor(Object colorDescriptor) {
+		description = (String) colorDescriptor;
+	    colorValue = encode(colorDescriptor);
 	    }
 	  
 	// foo does too!
