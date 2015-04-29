@@ -1,6 +1,6 @@
 package edu.saintjoe.cs.brianc.attr;
 // These comments are added by Brian Capouch
-// So this is a comment that I am making for testing purposes only
+
 public class Attr {
 	
 	// Once I create an object and give it a name, it CANNOT be changed!!
