@@ -66,4 +66,7 @@ package edu.saintjoe.cs.brianc.attr;
 			  else
 				  myColor = new ScreenColor(getValue());
 		  		  }
+		  public String toString() {
+			  return super.toString() + " " + myColor.toNumberString();
+		  }
 	}

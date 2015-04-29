@@ -34,5 +34,7 @@ public class ScreenColor {
 	  public String toString() {
 		  return description;
 	  }
-
+	  public String toNumberString() {
+		  return Integer.toHexString(colorValue);
+	  }
 	}
