@@ -28,7 +28,7 @@ public class Attr {
 	    }
 
 	// Accessor or "getter"
-	public Object getvalue() {
+	public Object getValue() {
 	    return value;
 	    }
 
