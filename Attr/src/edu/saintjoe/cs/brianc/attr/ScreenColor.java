@@ -29,6 +29,8 @@ public class ScreenColor {
 		  // We have to return something; this isn't really the right way to do it!
 		  return -1;
 	  }
+	
+	
 	  public String toString() {
 		  return description;
 	  }

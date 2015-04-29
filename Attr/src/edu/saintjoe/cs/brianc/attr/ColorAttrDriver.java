@@ -21,8 +21,5 @@ public class ColorAttrDriver {
 		
 		testThree = new ColorAttr("ColorTwo", newColor);
 		System.out.println(testThree.toString());
-		
-	
-	
-}
+		}
 }

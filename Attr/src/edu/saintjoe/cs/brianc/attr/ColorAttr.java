@@ -15,7 +15,7 @@ package edu.saintjoe.cs.brianc.attr;
 			// with the indicated signature (e.g. name, value)
 			// Below line is the same as writing Attr(name,value)
 		    super(name, value);
-		    System.out.println("C1");
+		    // System.out.println("C1");
 		    decodeColor();
 		    }
 
@@ -66,8 +66,4 @@ package edu.saintjoe.cs.brianc.attr;
 			  else
 				  myColor = new ScreenColor(getValue());
 		  		  }
-
-		  public String toString() {
-			  return super.toString() + " " + myColor;
-		}
 	}
