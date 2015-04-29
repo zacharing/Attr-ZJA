@@ -15,7 +15,7 @@ package edu.saintjoe.cs.brianc.attr;
 			// with the indicated signature (e.g. name, value)
 			// Below line is the same as writing Attr(name,value)
 		    super(name, value);
-		    // System.out.println("C1");
+		    System.out.println("C1");
 		    decodeColor();
 		    }
 
@@ -54,16 +54,20 @@ package edu.saintjoe.cs.brianc.attr;
 			}
 
 		  /** Return decoded ScreenColor object */
-		  public ScreenColor getValue() {
+		  public ScreenColor getColor() {
 			    return myColor;
 			    }
 
 		  /** Set ScreenColor from description */
 		  protected void decodeColor() {
-			  if(getValue() == null)
-				  myColor = null;
+			  if(getValue() == null) {
+				  System.out.println("Freakout!!");
+				  myColor = null; }
 			  else
-				  myColor = new ScreenColor(getvalue());
+				  myColor = new ScreenColor(getValue());
 		  		  }
-				}
 
+		  public String toString() {
+			  return super.toString() + " " + myColor;
+		}
+	}
