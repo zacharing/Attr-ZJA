@@ -21,6 +21,9 @@ public class ColorAttrDriver {
 		System.out.println(testTwo.toString());
 		
 		// Number three
+		// toString in this case is different than in Number four because
+		// this toString only goes to ColorAttr while Number four goes back
+		// to the original Attr class
 		testThree = new ColorAttr("ColorThree", newColor);
 		System.out.println(testThree.toString());
 	
